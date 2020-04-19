@@ -14,12 +14,102 @@
     <button onclick="foo()">Click me</button>
   </body>
   <script>
+    // // Variables
+    // // Data types
+    // var number1 = 245;
+    // var number2 = 45;
+    // var firstName = "John";
+    // var salary = 25000.5;
+    // var isValid = true;
+
+    // console.log(number1);
+    // console.log(firstName);
+
+    // // Arithmatic
+
+    // var addition = number1 + number2;
+
+    // console.log(addition);
+    // // Todo : sub, multi, div..
+
+    // // Conditions
+
+    // // To format code : CTRL + SHIFT + I
+
+    // var a = 50;
+
+    // if (a % 2 == 0) {
+    //   console.log(a + " is even");
+    // } else {
+    //   console.log(a + " is odd");
+    // }
+
+    // // Selling price and Cost price : profit or loss
+
+    // Loops
+
+    // for (var i = 0; i < 5; i++) {
+    //   console.log(i);
+    // }
+
+    // declare a var and print its table
+
+    // Arrays in JS
+
+    // var bikes = ["Unicorn", "Himalayan", "Vespa", "Duke 250","Thunderbird 350x"];
+    // var numbers = [24,20,23];
+
+    // for (var i = 0; i < bikes.length; i++) {
+    //   console.log(bikes[i]);
+    // }
+
+    // Functions
+
+    // No args, no return
+
+    // Definition
+    function sayHello() {
+      console.log("Hello");
+    }
+
+    // Call to a function
+    // sayHello();
+
+    // With arg, no return
+
+    // function greet(username) {
+    //   console.log("Hello " + username);
+    // }
+
+
+    // greet("Rohit");
+    // greet("Virat");
+    // greet("Mahi");
+
+    // with arg, with return
+
+
+    function getSquare(number) {
+
+        var sq = number * number;
+
+        return sq;
+    }
+
+
+    var answer = getSquare(123);
+
+    console.log(answer);
+    
     function foo() {
       var username = document.getElementById("username").value;
 
-      alertify.alert("This is an alert dialog.", function () {
-        alertify.message("OK");
-      });
+      if(username == ""){
+          document.getElementById("errorInfo").innerHTML = "Username is empty";   
+      } else {
+          alert("Hello, " + username);
+      }
+      
     }
   </script>
 </html>
