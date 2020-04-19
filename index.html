@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    User name : <input type="text" id="username" />
+
+    <br />
+
+    <span style="color: red;" id="errorInfo"></span>
+    <br />
+
+    <button onclick="foo()">Click me</button>
+  </body>
+  <script>
+    function foo() {
+      var username = document.getElementById("username").value;
+
+      alertify.alert("This is an alert dialog.", function () {
+        alertify.message("OK");
+      });
+    }
+  </script>
+</html>
